@@ -1,0 +1,350 @@
+	
+* {
+				margin:0px;
+				padding:0px;
+			}
+#header {
+				margin:auto;
+				width:100%;
+				font-family:Arial, Helvetica, sans-serif;
+                background-color: black;
+			}
+            
+            .menu1{
+                width:100%;
+            }
+
+            .menu2{
+                display: none;
+            }
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 62px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+            .responsive {
+              width: 100%;
+              height: auto;
+            }
+            
+            //--responsive
+            @media only screen and (max-width: 600px) {
+              /* For tablets: */
+              .col-s-1 {width: 8.33%;}
+              .col-s-2 {width: 16.66%;}
+              .col-s-3 {width: 25%;}
+              .col-s-4 {width: 33.33%;}
+              .col-s-5 {width: 41.66%;}
+              .col-s-6 {width: 50%;}
+              .col-s-7 {width: 58.33%;}
+              .col-s-8 {width: 66.66%;}
+              .col-s-9 {width: 75%;}
+              .col-s-10 {width: 83.33%;}
+              .col-s-11 {width: 91.66%;}
+              .col-s-12 {width: 100%;}
+                .menu1 {display: none;}
+                .menu2 {display: inline;}
+                .nav li {margin-right: -100;text-align: center}
+            }
+            @media only screen and (max-width: 768px) {
+              /* For desktop: */
+              .col-1 {width: 8.33%;}
+              .col-2 {width: 16.66%;}
+              .col-3 {width: 25%;}
+              .col-4 {width: 33.33%;}
+              .col-5 {width: 41.66%;}
+              .col-6 {width: 50%;}
+              .col-7 {width: 58.33%;}
+              .col-8 {width: 66.66%;}
+              .col-9 {width: 75%;}
+              .col-10 {width: 83.33%;}
+              .col-11 {width: 91.66%;}
+              .col-12 {width: 100%;}
+                .menu1 {display: none;}
+                .menu2 {display: inline;}
+                .nav li {margin-right: -100;text-align: center}
+            }
+            
+        .slider {
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slider ul {
+            display: flex;
+            padding: 0;
+            width: 400%;
+
+            animation: cambio 20s infinite alternate linear;
+        }
+
+        .slider li {
+            width: 100%;
+            list-style: none;
+        }
+
+        .slider img {
+            width: 100%;
+        }
+
+        @keyframes cambio {
+            0% {margin-left: 0;}
+            20% {margin-left: 0;}
+
+            25% {margin-left: -100%;}
+            45% {margin-left: -100%;}
+
+            50% {margin-left: -200%;}
+            70% {margin-left: -200%;}
+
+            75% {margin-left: -300%;}
+            100% {margin-left: -300%;}
+        }
+
+        @font-face {
+          font-family: "Mystery Quest";
+          src: url("mystery-quest.woff2");
+        }
+        
+        .texto1 {
+          font-family: sans-serif;
+            font-size: 150%;
+            text-align: center;
+            background-color: white;
+        }
+
+        .texto2 {
+          font-family: sans-serif;
+            font-size: 200%;
+            text-align: center;
+            color: white;
+            background-color: black;
+            padding: 20px;
+        }
+
+.texto3 {
+          font-family: sans-serif;
+            font-size: 150%;
+            text-align: center;
+            background-color: #eda11b;
+            padding: 20px;
+        }
+.texto4 {
+          font-family: sans-serif;
+            font-size: 80%;
+            text-align: right;
+            background-color: white;
+            padding: 0px;
+        }
+        
+        div.centro {
+             float: center;
+             width: 1000px;
+             text-align: center;
+             display: inline;
+            font-family: sans-serif;
+             font-size: 120%;
+            margin: 15px;
+        }
+            
+		.footer {
+          height: 8rem;
+          background-color: #eda11b
+        }
+.footer2 {
+          height: 8rem;
+          background-color: #eda11b
+        }
+
+        div.left {
+             float: left;
+             width: 300px;
+             text-align: left;
+             display: inline;
+            font-family: sans-serif;
+            color: white;
+             font-size: 100%;
+            margin: 10px;
+        }
+
+        div.right {
+             float: right;
+             text-align: right;
+             display: inline;
+            font-family: sans-serif;
+            color: white;
+             font-size: 100%;
+            margin: 10px;
+        }
+
+div.textleft {
+             float: left;
+             width: 30%;
+             text-align: center;
+             display: inline;
+            font-family: sans-serif;
+             font-size: 100%;
+            margin-left: 100px;
+            margin-right: 100px;
+            height: auto;
+    }
+
+div.textright {
+             float: right;
+            width: 30%;
+             text-align: center;
+             display: inline;
+            font-family: sans-serif;
+             font-size: 100%;
+            margin-left: 100px;
+            margin-right: 100px;
+            height: auto;
+        }
+
+@media only screen and (max-width: 600px) {
+        div.textleft {
+             float: left;
+             width: 80%;
+             text-align: center;
+             display: inline;
+            font-family: sans-serif;
+             font-size: 100%;
+            margin-left: 50px;
+            margin-right: 50px;
+            height: auto;
+            padding-bottom: 50px;
+    }
+div.textright {
+             float: right;
+            width: 80%;
+             text-align: center;
+             display: inline;
+            font-family: sans-serif;
+             font-size: 100%;
+            margin-left: 50px;
+            margin-right: 50px;
+            height: auto;
+    padding-bottom: 50px;
+        }
+.footer2 {
+          margin-top: 500px;
+        }
+}
+@media only screen and (max-width: 768px) {
+        div.textleft {
+             float: left;
+             width: 80%;
+             text-align: center;
+             display: inline;
+            font-family: sans-serif;
+             font-size: 100%;
+            margin-left: 50px;
+            margin-right: 50px;
+            height: auto;
+            padding-bottom: 50px;
+    }
+div.textright {
+             float: right;
+            width: 80%;
+             text-align: center;
+             display: inline;
+            font-family: sans-serif;
+             font-size: 100%;
+            margin-left: 50px;
+            margin-right: 50px;
+            height: auto;
+    padding-bottom: 50px;
+        }
+    .footer2 {
+          margin-top: 500px;
+        }
+}
+
+        
+div.textleft2 {
+             float: left;
+             width: 35%;
+             text-align: center;
+             display: inline;
+            font-family: sans-serif;
+             font-size: 100%;
+            margin-left: 100px;
+            margin-right: 100px;
+            height: auto;
+    }
+
+div.textright2 {
+             float: right;
+            width: 35%;
+             text-align: center;
+             display: inline;
+            font-family: sans-serif;
+             font-size: 100%;
+            margin-left: 100px;
+            margin-right: 100px;
+            height: auto;
+        }
+
+
+@media only screen and (max-width: 768px) {
+        div.textleft2 {
+             float: left;
+             width: 80%;
+             text-align: center;
+             display: inline;
+            font-family: sans-serif;
+             font-size: 100%;
+            margin-left: 50px;
+            margin-right: 50px;
+            height: auto;
+            padding-bottom: 50px;
+    }
+div.textright2 {
+             float: right;
+            width: 80%;
+             text-align: center;
+             display: inline;
+            font-family: sans-serif;
+             font-size: 100%;
+            margin-left: 50px;
+            margin-right: 50px;
+            height: auto;
+    padding-bottom: 50px;
+        }
+}
